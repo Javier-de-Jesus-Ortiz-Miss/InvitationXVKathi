@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Countdown Timer
 (function () {
-  const targetDate = new Date("2025-08-02T00:00:00");
+  const targetDate = new Date("2025-10-18T00:00:00");
   const daysEl = document.getElementById("days");
   const hoursEl = document.getElementById("hours");
   const minutesEl = document.getElementById("minutes");
