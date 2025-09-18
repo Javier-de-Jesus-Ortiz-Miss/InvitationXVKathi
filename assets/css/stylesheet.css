@@ -558,7 +558,7 @@ body {
 .details-recepcion-wrapper{
   position: absolute;
   top:46%;
-  left:10%;
+  left:6%;
 }
 
 .details-extra{
@@ -2005,7 +2005,7 @@ body.modal-open {
   .details-recepcion-wrapper{
     position: absolute;
     top:45%;
-    left:10%;
+    left:6%;
   }
 
   .details-extra{
