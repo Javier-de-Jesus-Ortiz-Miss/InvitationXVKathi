@@ -163,7 +163,7 @@ body {
 
 .text-cover {
   position: absolute;
-  top: 62%;
+  top: 61%;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
@@ -455,65 +455,67 @@ body {
 }
 
 .frame-element1 img,
-.frame-element2 img,
-.frame-element3 img,
-.frame-element4 img,
-.frame-element5 img,
-.frame-element6 img {
+.frame-element2 img {
+  position: absolute;
   display: flex;
   width: 50vw;
   height: auto;
   z-index: -10;
 }
 
+.frame-element3 img,
+.frame-element4 img,
+.frame-element5 img,
+.frame-element6 img {
+  width: 30vw;
+}
+
 .frame-element1 img {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(-32%, -7%);
+  top: 12%;
+  left: 80%;
+  opacity: 0.5;
+  transform: rotate(-57deg) scaleY(-1);
 }
 
 .frame-element2 img {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(100%, -11%) rotate(180deg);
+  top: 42%;
+  right: 80%;
+  opacity: 0.5;
+  transform: rotate(-57deg) scaleX(-1);
 }
 
 .frame-element3 img {
   position: absolute;
-  top: 28%;
-  left: 0%;
-  transform: translate(-32%, 0);
+  top: 2%;
+  left: -25%;
 }
 
 .frame-element4 img {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(100%, 80%) rotate(180deg);
+  top: 15%;
+  left: 90%;
+  transform: scaleX(-1);
 }
 
 .frame-element5 img {
   position: absolute;
-  top: 66%;
-  left: 0%;
-  transform: translate(-32%, 0);
+  top: 35%;
+  left: 90%;
+  transform: scaleX(-1);
 }
 
 .frame-element6 img {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(100%, 170%) rotate(180deg);
+  top: 45%;
+  left: -30%;
 }
 
 .icon-iglesia {
   position: absolute;
   top: -8%;
-  left: -40%;
+  left: -50%;
   display: flex;
-  width: 60vw;
+  width: 80vw;
   height: auto;
   z-index: 1;
 }
@@ -521,9 +523,9 @@ body {
 .icon-recepcion {
   position: absolute;
   top: 40%;
-  left: 58%;
+  left: 40%;
   display: flex;
-  width: 60vw;
+  width: 80vw;
   height: auto;
   z-index: 1;
 }
@@ -549,19 +551,73 @@ body {
 
 .details-misa-wrapper{
   position: absolute;
-  top:16%;
-  left:45%;
+  top:20%;
+  left:50%;
 }
 
 .details-recepcion-wrapper{
   position: absolute;
   top:46%;
-  left:15%;
+  left:10%;
 }
 
 .details-extra{
-  margin-top: 25rem;
+  width: 100%;
+  margin-top: 37rem;
 }
+
+.extra-corner-top-left1 img,
+.extra-corner-top-left2 img,
+.extra-corner-top-right img,
+.extra-corner-bottom-left img,
+.extra-corner-bottom-right1 img,
+.extra-corner-bottom-right2 img {
+  position: absolute;
+  width: 8rem;
+  height: auto;
+  z-index: 1;
+}
+
+.extra-corner-top-left1 img {
+  top: 65%;
+  right: 88%;
+  transform: rotate(310deg);
+  opacity: 0.5;
+}
+
+.extra-corner-top-left2 img {
+  top: 68%;
+  right: 65%;
+}
+.extra-corner-top-right img {
+  top: 67%;
+  left: 65%;
+}
+
+.extra-corner-bottom-left img {
+  top: 97%;
+  right: 65%;
+  transform: rotate(180deg);
+}
+
+.extra-corner-bottom-right1 img {
+  top: 99%;
+  right: -25%;
+  opacity: 0.5;
+  transform: rotate(105deg);
+}
+
+.extra-corner-bottom-right2 img {
+  top: 97%;
+  right: -5%;
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.details-extra-decor > .details-block2 {
+  position: relative;
+  z-index: 2;
+}
+
 
 .details-content {
   display: flex;
@@ -586,9 +642,18 @@ body {
   font-family: 'MonteCarlo', serif;
   font-size: 9vw;
   color: #e6828b;
-  margin-bottom: 0.4vw;
+  z-index: 10;
+  width: 100%;
+}
+
+.details-phrase2 {
+  font-family: 'MonteCarlo', serif;
+  font-size: 9vw;
+  color: #e6828b;
+  margin-top: -7vw;
   z-index: 10;
   padding: 0.5rem;
+  
 }
 
 .details-block {
@@ -626,14 +691,14 @@ body {
 .details-place {
   font-family: 'Lora', serif;
   font-size: 4vw;
-  color: #923231;
+  color: #b05451;
   margin-bottom: 0.4vw;
 }
 
 .details-time {
   font-family: 'Lora', serif;
   font-size: 4vw;
-  color: #923231;
+  color: #b05451;
   font-style: italic;
   margin-bottom: 1.4vw;
 }
@@ -641,7 +706,10 @@ body {
 .details-link {
   display: inline-block;
   padding: 0.8vw 2.4vw;
-  background: #c1b085;
+  background:
+    linear-gradient(90deg, #bfa14a 0%, #e6d3a3 50%, #bfa14a 100%) padding-box,
+    linear-gradient(90deg, #bfa14a 0%, #DAAA59 50%, #bfa14a 100%) border-box;
+  border: 0.35vw solid transparent;
   color: #fff;
   border-radius: 1.4vw;
   font-family: 'Montserrat', sans-serif;
@@ -657,8 +725,13 @@ body {
 
 .details-link:hover,
 .details-link:focus {
-  background: #a18c5b;
-  color: #fff;
+  background:
+    linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) padding-box,
+    linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) border-box;
+  color: #6b5b2b;
+  filter: brightness(1.08) drop-shadow(0 0 6px #e6d3a388);
+  text-shadow: 0 1px 6px #fff8;
+  transition: background 0.3s, color 0.3s, filter 0.3s, text-shadow 0.3s;
 }
 
 .confirmation {
@@ -670,6 +743,7 @@ body {
   text-align: center;
   position: relative;
   font-weight: 200;
+  margin-top: 5rem;
 }
 
 .attendance-bg {
@@ -770,7 +844,7 @@ body {
 .confirm-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(146, 50, 49, 0.25);
+  background: rgba(230, 130, 139, 0.18);
   backdrop-filter: blur(6px);
   z-index: 9999;
   display: flex;
@@ -790,9 +864,9 @@ body {
 }
 
 .confirm-modal {
-  background: #FCEDE2;
+  background: #FFFBFD;
   border-radius: 2rem;
-  box-shadow: 0 8px 32px #92323133;
+  box-shadow: 0 8px 32px #e6828b33;
   padding: 2.5rem 2rem 2rem 2rem;
   min-width: 320px;
   max-width: 90vw;
@@ -818,7 +892,7 @@ body {
 
 .confirm-modal h2 {
   font-family: 'MonteCarlo', cursive;
-  color: #923231;
+  color: #d8a64a;
   font-size: 2.2rem;
   text-align: center;
   font-weight: 400;
@@ -826,7 +900,7 @@ body {
 
 .confirm-modal label {
   font-family: 'Lora', serif;
-  color: #76430d;
+  color: #b05451;
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
   display: block;
@@ -838,23 +912,23 @@ body {
   width: 100%;
   padding: 0.7rem 1rem;
   border-radius: 1rem;
-  border: 1px solid #c1b085;
+  border: 1px solid #d8a64a;
   font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1.2rem;
   background: #fff;
-  color: #923231;
+  color: #b05451;
   outline: none;
   transition: border-color 0.2s;
 }
 
 .confirm-modal input[type="text"]:focus,
 .confirm-modal select:focus {
-  border-color: #923231;
+  border-color: #e6828b;
 }
 
 .confirm-modal .modal-btn {
-  background: #c1b085;
+  background: linear-gradient(90deg, #bfa14a 0%, #e6d3a3 50%, #bfa14a 100%);
   color: #fff;
   border: none;
   border-radius: 1rem;
@@ -864,7 +938,7 @@ body {
   cursor: pointer;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
   box-shadow: 0 2px 8px #0002;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -872,7 +946,10 @@ body {
 
 .confirm-modal .modal-btn:hover,
 .confirm-modal .modal-btn:focus {
-  background: #a18c5b;
+  background:
+    linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) padding-box,
+    linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) border-box;
+  color: #6b5b2b;
 }
 
 .confirm-modal .modal-close {
@@ -882,19 +959,19 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #923231;
+  color: #e6828b;
   cursor: pointer;
   z-index: 2;
   transition: color 0.2s;
 }
 
 .confirm-modal .modal-close:hover {
-  color: #c1b085;
+  color: #d8a64a;
 }
 
 .confirm-modal .modal-msg {
   font-family: 'Lora', serif;
-  color: #923231;
+  color: #b05451;
   font-size: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -910,7 +987,7 @@ body {
 }
 
 .confirm-modal .modal-error {
-  color: #b71c1c;
+  color: #e6828b;
   font-family: 'Lora', serif;
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -926,7 +1003,7 @@ body {
 
 .confirm-modal .spinner {
   border: 4px solid #f3e9d7;
-  border-top: 4px solid #c1b085;
+  border-top: 4px solid #e6828b;
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
@@ -952,7 +1029,7 @@ body {
 
 .confirm-modal .modal-final {
   font-family: 'Montserrat', cursive;
-  color: #923231;
+  color: #e6828b;
   font-size: 1rem;
   margin: 2rem 0 1rem 0;
   text-align: center;
@@ -960,7 +1037,7 @@ body {
 
 .confirm-modal .modal-small {
   font-family: 'Montserrat', sans-serif;
-  color: #76430d;
+  color: #b05451;
   font-size: 0.95rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -979,7 +1056,7 @@ body.modal-open {
 /* === GALERÍA === */
 .galery {
   position: relative;
-  background: #FCEDE2;
+  background: #FFFBFD;
   padding: 9vw 3vw 7vw 3vw;
   display: flex;
   flex-direction: column;
@@ -1025,7 +1102,7 @@ body.modal-open {
 .galery-header {
   font-family: 'MonteCarlo', cursive;
   font-size: 12vw;
-  color: #923231;
+  color: #e6828b;
   text-align: center;
   margin: 0 auto 8vw auto;
   font-weight: 400;
@@ -1080,7 +1157,7 @@ body.modal-open {
 .galery-text-main {
   font-family: 'Lora', serif;
   font-size: 4vw;
-  color: #76430d;
+  color: #C19A6B;
   text-align: center;
   margin-top: 4vw;
   margin-bottom: 2vw;
@@ -1090,7 +1167,7 @@ body.modal-open {
 .galery-text-thanks {
   font-family: 'MonteCarlo', cursive;
   font-size: 8vw;
-  color: #923231;
+  color: #e6828b;
   text-align: center;
   margin-top: 0.6vw;
   z-index: 2;
@@ -1175,7 +1252,7 @@ body.modal-open {
 .galery-modal-close:hover,
 .galery-modal-prev:hover,
 .galery-modal-next:hover {
-  background: rgba(146, 50, 49, 0.8);
+  background: rgba(255, 155, 163, 0.941);
 }
 
 /* Animaciones para abrir/cerrar modal y cambiar imagen */
@@ -1325,7 +1402,7 @@ body.modal-open {
 
 .galery-img-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -1631,7 +1708,7 @@ body.modal-open {
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #923231;
+    color: #b05451;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
@@ -1641,6 +1718,7 @@ body.modal-open {
     font-family: 'Lora', serif;
     font-size: 0.9rem;
     margin-bottom: 1rem;
+    color: #b05451;
   }
 
   .group {
@@ -1650,7 +1728,7 @@ body.modal-open {
   .highlight p {
     font-family: 'MonteCarlo', cursive;
     font-size: 2.2rem;
-    color: #C19A6B;
+    color: #d8a64a;
     margin-bottom: 0.5rem;
     overflow: visible !important;
     max-height: none !important;
@@ -1661,7 +1739,7 @@ body.modal-open {
   .godparent-name p {
     font-family: 'Lora', serif;
     font-size: 1rem;
-    color: #923231;
+    color: #b05451;
     margin: 0.5rem 0;
   }
 
@@ -1826,86 +1904,165 @@ body.modal-open {
   }
 
   .frame-element1 img,
-  .frame-element2 img,
-  .frame-element3 img,
-  .frame-element4 img,
-  .frame-element5 img,
-  .frame-element6 img {
+  .frame-element2 img {
+    position: absolute;
     display: flex;
     width: 13rem;
     height: auto;
     z-index: 1;
   }
 
+  .frame-element3 img,
+  .frame-element4 img,
+  .frame-element5 img,
+  .frame-element6 img {
+    width: 7rem;
+  }
+
   .frame-element1 img {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(-31.5%, -7%);
+    top: 10%;
+    left: 80%;
+    opacity: 0.5;
+    transform: rotate(-57deg) scaleY(-1);
   }
 
   .frame-element2 img {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(93%, -11%) rotate(180deg);
+    top: 43%;
+    right: 80%;
+    opacity: 0.5;
+    transform: rotate(-57deg) scaleX(-1);
   }
 
   .frame-element3 img {
     position: absolute;
-    top: 33%;
-    left: 0%;
-    transform: translate(-31.5%, 0);
+    top: 0%;
+    left: -25%;
   }
 
   .frame-element4 img {
     position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(93%, 80%) rotate(180deg);
+    top: 15%;
+    left: 90%;
+    transform: scaleX(-1);
   }
 
   .frame-element5 img {
     position: absolute;
-    top: 70%;
-    left: 0%;
-    transform: translate(-31.5%, 0);
+    top: 34%;
+    left: 90%;
+    transform: scaleX(-1);
   }
 
   .frame-element6 img {
     position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(93%, 170%) rotate(180deg);
+    top: 45%;
+    left: -30%;
   }
 
   .icon-iglesia {
+    position: absolute;
+    top: -8%;
+    left: -50%;
     display: flex;
-    width: 10rem;
+    width: 19rem;
     height: auto;
     z-index: 1;
   }
 
   .icon-recepcion {
+    position: absolute;
+    top: 40%;
+    left: 40%;
     display: flex;
-    width: 6rem;
+    width: 19rem;
     height: auto;
     z-index: 1;
   }
 
   .icon-gala {
     display: flex;
-    width: 6rem;
+    width: 4rem;
     height: auto;
     z-index: 1;
   }
 
   .icon-carta {
     display: flex;
-    width: 6rem;
+    width: 4rem;
     height: auto;
     z-index: 1;
     margin-bottom: 1.5rem;
+  }
+
+  .details-eventos{
+    display: block;
+  }
+  .details-misa-wrapper{
+    position: absolute;
+    top:19%;
+    left:50%;
+  }
+  .details-recepcion-wrapper{
+    position: absolute;
+    top:45%;
+    left:10%;
+  }
+
+  .details-extra{
+    width: 100%;
+    margin-top: 40rem;
+  }
+
+  .extra-corner-top-left1 img,
+  .extra-corner-top-left2 img,
+  .extra-corner-top-right img,
+  .extra-corner-bottom-left img,
+  .extra-corner-bottom-right1 img,
+  .extra-corner-bottom-right2 img {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    z-index: 1;
+  }
+
+  .extra-corner-top-left1 img {
+    top: 65%;
+    right: 88%;
+    transform: rotate(310deg);
+    opacity: 0.5;
+  }
+
+  .extra-corner-top-left2 img {
+    top: 68%;
+    right: 65%;
+  }
+  .extra-corner-top-right img {
+    top: 67%;
+    left: 65%;
+  }
+
+  .extra-corner-bottom-left img {
+    top: 97%;
+    right: 65%;
+    transform: rotate(180deg);
+  }
+
+  .extra-corner-bottom-right1 img {
+    top: 99%;
+    right: -25%;
+    opacity: 0.5;
+    transform: rotate(105deg);
+  }
+
+  .extra-corner-bottom-right2 img {
+    top: 97%;
+    right: -5%;
+    transform: rotate(90deg) scaleX(-1);
+  }
+
+  .details-extra-decor > .details-block2 {
+    position: relative;
+    z-index: 2;
   }
 
   .details-content {
@@ -1920,7 +2077,7 @@ body.modal-open {
   .details-text {
     font-family: 'Alice', serif;
     font-size: 1.2rem;
-    color: #76430d;
+    color: #d8a64a;
     text-align: top center;
     line-height: 1.5;
     max-width: 600px;
@@ -1929,9 +2086,19 @@ body.modal-open {
   .details-phrase {
     font-family: 'MonteCarlo', serif;
     font-size: 2.2rem;
-    color: #923231;
+    color: #e6828b;
     margin-bottom: 0.2rem;
     padding: 0.5rem;
+  }
+
+  .details-phrase2 {
+    font-family: 'MonteCarlo', serif;
+    font-size: 2.2rem;
+    color: #e6828b;
+    margin-top: -3rem;
+    z-index: 10;
+    padding: 0.5rem;
+    
   }
 
   .details-block {
@@ -1968,22 +2135,25 @@ body.modal-open {
   .details-place {
     font-family: 'Lora', serif;
     font-size: 1rem;
-    color: #923231;
+    color: #b05451;
     margin-bottom: 0.2rem;
   }
 
   .details-time {
     font-family: 'Lora', serif;
     font-size: 1rem;
-    color: #923231;
+    color: #b05451;
     font-style: italic;
     margin-bottom: 0.5rem;
   }
 
   .details-link {
     display: inline-block;
-    padding: 0.3rem 0.8rem;
-    background: #c1b085;
+    padding: 0.2rem 0.7rem;
+    background:
+      linear-gradient(90deg, #bfa14a 0%, #e6d3a3 50%, #bfa14a 100%) padding-box,
+      linear-gradient(90deg, #bfa14a 0%, #DAAA59 50%, #bfa14a 100%) border-box;
+    border: 0.10vw solid transparent;
     color: #fff;
     border-radius: 0.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -1999,8 +2169,13 @@ body.modal-open {
 
   .details-link:hover,
   .details-link:focus {
-    background: #a18c5b;
-    color: #fff;
+    background:
+      linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) padding-box,
+      linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) border-box;
+    color: #6b5b2b;
+    filter: brightness(1.08) drop-shadow(0 0 6px #e6d3a388);
+    text-shadow: 0 1px 6px #fff8;
+    transition: background 0.3s, color 0.3s, filter 0.3s, text-shadow 0.3s;
   }
 
 
@@ -2120,7 +2295,7 @@ body.modal-open {
   .confirm-modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(146, 50, 49, 0.25);
+    background: rgba(230, 130, 139, 0.18);
     backdrop-filter: blur(6px);
     z-index: 9999;
     display: flex;
@@ -2142,7 +2317,7 @@ body.modal-open {
   .confirm-modal {
     background: #FCEDE2;
     border-radius: 2rem;
-    box-shadow: 0 8px 32px #92323133;
+    box-shadow: 0 8px 32px #e6828b33;
     padding: 2.5rem 2rem 2rem 2rem;
     min-width: 320px;
     max-width: 90vw;
@@ -2168,7 +2343,7 @@ body.modal-open {
 
   .confirm-modal h2 {
     font-family: 'MonteCarlo', cursive;
-    color: #923231;
+    color: #d8a64a;
     font-size: 2.2rem;
     text-align: center;
     font-weight: 400;
@@ -2176,7 +2351,7 @@ body.modal-open {
 
   .confirm-modal label {
     font-family: 'Lora', serif;
-    color: #76430d;
+    color: #b05451;
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
     display: block;
@@ -2188,23 +2363,23 @@ body.modal-open {
     width: 100%;
     padding: 0.7rem 1rem;
     border-radius: 1rem;
-    border: 1px solid #c1b085;
+    border: 1px solid #d8a64a;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.2rem;
     background: #fff;
-    color: #923231;
+    color: #b05451;
     outline: none;
     transition: border-color 0.2s;
   }
 
   .confirm-modal input[type="text"]:focus,
   .confirm-modal select:focus {
-    border-color: #923231;
+    border-color: #e6828b;
   }
 
   .confirm-modal .modal-btn {
-    background: #c1b085;
+    background: linear-gradient(90deg, #bfa14a 0%, #e6d3a3 50%, #bfa14a 100%);
     color: #fff;
     border: none;
     border-radius: 1rem;
@@ -2214,7 +2389,7 @@ body.modal-open {
     cursor: pointer;
     margin-top: 0.5rem;
     margin-bottom: 0.2rem;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
     box-shadow: 0 2px 8px #0002;
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -2222,7 +2397,10 @@ body.modal-open {
 
   .confirm-modal .modal-btn:hover,
   .confirm-modal .modal-btn:focus {
-    background: #a18c5b;
+    background:
+      linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) padding-box,
+      linear-gradient(90deg, #e6d3a3 0%, #bfa14a 50%, #e6d3a3 100%) border-box;
+    color: #6b5b2b;
   }
 
   .confirm-modal .modal-close {
@@ -2232,19 +2410,19 @@ body.modal-open {
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #923231;
+    color: #e6828b;
     cursor: pointer;
     z-index: 2;
     transition: color 0.2s;
   }
 
   .confirm-modal .modal-close:hover {
-    color: #c1b085;
+    color: #d8a64a;
   }
 
   .confirm-modal .modal-msg {
     font-family: 'Lora', serif;
-    color: #923231;
+    color: #b05451;
     font-size: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -2260,7 +2438,7 @@ body.modal-open {
   }
 
   .confirm-modal .modal-error {
-    color: #b71c1c;
+    color: #e6828b;
     font-family: 'Lora', serif;
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -2276,7 +2454,7 @@ body.modal-open {
 
   .confirm-modal .spinner {
     border: 4px solid #f3e9d7;
-    border-top: 4px solid #c1b085;
+    border-top: 4px solid #e6828b;
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
@@ -2302,7 +2480,7 @@ body.modal-open {
 
   .confirm-modal .modal-final {
     font-family: 'Montserrat', cursive;
-    color: #923231;
+    color: #e6828b;
     font-size: 1rem;
     margin: 2rem 0 1rem 0;
     text-align: center;
@@ -2310,7 +2488,7 @@ body.modal-open {
 
   .confirm-modal .modal-small {
     font-family: 'Montserrat', sans-serif;
-    color: #76430d;
+    color: #b05451;
     font-size: 0.95rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -2329,7 +2507,7 @@ body.modal-open {
   /* === GALERÍA === */
   .galery {
     position: relative;
-    background: #FCEDE2;
+    background: #FFFBFD;
     padding: 3.5rem 1.2rem 2.7rem 1.2rem;
     display: flex;
     flex-direction: column;
@@ -2354,7 +2532,7 @@ body.modal-open {
     left: 0;
     display: flex;
     justify-content: flex-start;
-    top: 4%;
+    top: 6%;
   }
 
   .galery-decor-right {
@@ -2362,7 +2540,7 @@ body.modal-open {
     display: flex;
     justify-content: flex-end;
     transform: scaleX(-1);
-    top: 4%;
+    top: 6%;
   }
 
   .galery-decor-left img,
@@ -2375,7 +2553,7 @@ body.modal-open {
   .galery-header {
     font-family: 'MonteCarlo', cursive;
     font-size: 3.5rem;
-    color: #923231;
+    color: #e6828b;
     text-align: center;
     margin: 0 auto 3rem auto;
     font-weight: 400;
@@ -2430,7 +2608,7 @@ body.modal-open {
   .galery-text-main {
     font-family: 'Lora', serif;
     font-size: 1.3rem;
-    color: #76430d;
+    color: #C19A6B;
     text-align: center;
     margin-top: 1.7rem;
     margin-bottom: 0.75rem;
@@ -2440,7 +2618,7 @@ body.modal-open {
   .galery-text-thanks {
     font-family: 'MonteCarlo', cursive;
     font-size: 2.3rem;
-    color: #923231;
+    color: #e6828b;
     text-align: center;
     margin-top: 0.23rem;
     z-index: 2;
@@ -2525,7 +2703,7 @@ body.modal-open {
   .galery-modal-close:hover,
   .galery-modal-prev:hover,
   .galery-modal-next:hover {
-    background: rgba(146, 50, 49, 0.8);
+    background: rgba(255, 155, 163, 0.941);
   }
 
   /* Animaciones para abrir/cerrar modal y cambiar imagen */
@@ -2675,7 +2853,7 @@ body.modal-open {
 
   .galery-img-photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
   }

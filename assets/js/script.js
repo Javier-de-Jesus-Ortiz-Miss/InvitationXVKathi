@@ -1,4 +1,4 @@
-const FECHA_LIMITE_CONFIRMACION = new Date("2025-08-01T23:59:00");
+const FECHA_LIMITE_CONFIRMACION = new Date("2025-10-05T23:59:00");
 
 function isDesktop() {
   return window.innerWidth >= 700;
@@ -465,12 +465,6 @@ async function enviarConfirmacion(modal) {
     "assets/img/galery4.webp",
     "assets/img/galery5.webp",
     "assets/img/galery6.webp",
-    "assets/img/galery7.webp",
-    "assets/img/galery8.webp",
-    "assets/img/galery9.webp",
-    "assets/img/galery10.webp",
-    "assets/img/galery11.webp",
-    "assets/img/galery12.webp",
   ];
 
   let modal, modalImg, modalOverlay, btnClose, btnPrev, btnNext;
