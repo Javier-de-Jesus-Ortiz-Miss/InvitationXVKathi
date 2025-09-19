@@ -452,6 +452,7 @@ body {
   text-align: center;
   padding: 2rem;
   overflow: visible !important;
+  margin-top: -2.5rem;
 }
 
 .frame-element1 img,
@@ -678,7 +679,6 @@ body {
   color: #C19A6B;
   margin-bottom: 0.4vw;
   font-style: italic;
-  padding-right: 0.5rem;
 }
 
 .details-label {
